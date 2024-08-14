@@ -1,7 +1,6 @@
-package com.allinformatica.parkingcontrol.models;
+package com.allinformatica.parkingcontrol.entities;
 
 import jakarta.persistence.*;
-import jdk.jfr.Enabled;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -9,7 +8,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "parking_spot")
-public class ParkingSpotModel implements Serializable {
+public class ParkingSpot implements Serializable {
     private static final long serialVersionUID = 1l;
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
